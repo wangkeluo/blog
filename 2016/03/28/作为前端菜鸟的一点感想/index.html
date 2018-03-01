@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>作为前端菜鸟的一点感想 | 前端进阶之路</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="生活,前端," />
+  
+
+  <meta name="description" content="接触前端是在大三，一门课需要写一个有选课功能的静态网页，于是在什么都不懂得情况下开始了前端之路。">
+<meta name="keywords" content="生活,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="作为前端菜鸟的一点感想">
+<meta property="og:url" content="http://www.wangkl.tk/2016/03/28/作为前端菜鸟的一点感想/index.html">
+<meta property="og:site_name" content="前端进阶之路">
+<meta property="og:description" content="接触前端是在大三，一门课需要写一个有选课功能的静态网页，于是在什么都不懂得情况下开始了前端之路。">
+<meta property="og:updated_time" content="2016-03-28T16:44:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="作为前端菜鸟的一点感想">
+<meta name="twitter:description" content="接触前端是在大三，一门课需要写一个有选课功能的静态网页，于是在什么都不懂得情况下开始了前端之路。">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            rel="noopener noreferrer"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#PHP-amp-amp-HTML"><span class="toc-text">PHP &amp;&amp; HTML</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#因与果"><span class="toc-text">因与果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#emacs-amp-amp-sublime-text"><span class="toc-text">emacs &amp;&amp; sublime text</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lamp-amp-amp-xampp"><span class="toc-text">lamp &amp;&amp; xampp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript"><span class="toc-text">JavaScript</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#感悟"><span class="toc-text">感悟</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-作为前端菜鸟的一点感想" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">作为前端菜鸟的一点感想</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2016.03.28</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Corot</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/生活记录/">生活记录</a>
+  </span>
+
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://www.wangkl.tk/2016/03/28/作为前端菜鸟的一点感想/#disqus_thread"></a>
+        </span>
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>接触前端是在大三，一门课需要写一个有选课功能的静态网页，于是在什么都不懂得情况下开始了前端之路。</p>
+<a id="more"></a>
+<h3 id="PHP-amp-amp-HTML"><a href="#PHP-amp-amp-HTML" class="headerlink" title="PHP &amp;&amp; HTML"></a>PHP &amp;&amp; HTML</h3><p>作为什么都不懂但是作业又不得不写的渣渣，只能lean from google。但是不幸的是，我一开始就迈错了坑，竟然以为html只能和php写在一起，并且愚蠢地将所有的文件后缀一律改成了php。然后疯狂的在html代码里面穿插着诸如<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> balabala... <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>的代码。当时觉得php无所不能，配合着html想怎么写怎么写，酷炫无比。最后作业顺利完成，并且还奇迹般在网页上加了一点css，顿时觉得自己逼格蹭蹭上涨，心里也有个声音告诉哥: 恭喜你入坑了。</p>
+<h3 id="因与果"><a href="#因与果" class="headerlink" title="因与果"></a>因与果</h3><p>世界上所有的事情都有因果，我之所以是我，是因为之前的我的行为造就了我–就如同一个崩坏的斐波拉切数列。之前的一节课上我与前端结缘，结下了我申请实习的果。显而易见，我选择了JD上写有web development的职位去申请，并且如愿以偿。</p>
+<h3 id="emacs-amp-amp-sublime-text"><a href="#emacs-amp-amp-sublime-text" class="headerlink" title="emacs &amp;&amp; sublime text"></a>emacs &amp;&amp; sublime text</h3><p>我的运气一向很好，实习的时候遇到了一位有经验的，并且乐于帮助我的Team Leader – Mark。他教会了我很多，并且带我在前端的路上走了一程，我很感激他。他教我用emacs,但是我最终还是选择了sublime text，可能是因为我本身就不是那么极客的人，我更倾向于钻研怎么去砍树，而不是去自己做个斧头，而是打算直接买个电锯得了。sublime text已经满足了我所有的需求。emacs虽好，但是我并不愿意在它上面多花时间，而且我希望保持我的思维干净，不让自己的生活变得复杂。</p>
+<h3 id="lamp-amp-amp-xampp"><a href="#lamp-amp-amp-xampp" class="headerlink" title="lamp &amp;&amp; xampp"></a>lamp &amp;&amp; xampp</h3><p>从我用sublime text而不是emacs已经可以看出，我注定不是一个会去自己设置环境的人，所以理所应当，在一位师兄的介绍下，我选择了lamp或者xampp去做web开发。</p>
+<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><p>说到web开发，我进公司的第一天，就知道我在原则性认识上已经出现了错误，我把php和html看成了互不可缺的伴侣，但其实两个没啥必然关系，而且程序员们也不会设计个非得把这两个绑定在一起的操蛋玩意儿。但是做web开发，可以说JavaScript确实是必不可少的。公司的Mark便普及了最基本的web知识给我，让我从基础上理解了js，html，css，php存在的意义。这也使我能够快速得在网上自主学习，了解了其他从这些基础引申出来的东西：less，scss,nodejs，react.js,vue.js,etc. 这个珍贵的学习过程给了我一个很大启发：如果可能，我希望学习任何一个领域的知识之前，都能找到一个业内人士，对我进行一个基础概念的普及。这个0到1的过程就像宇宙大爆炸的那一瞬间一样，短暂但及其有重量，它几乎决定了我之后在这个方面的学习兴趣以及效率。</p>
+<h3 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h3><p>说道感悟的正题，具体写代码的感悟不是没有，但我觉得不重要，这些所谓的方法论都是因人而异，而且在不同的阶段你的看法也会不同，我觉得只要跟着感觉走，你觉得这么写很好，很方便，那就继续。如果写出来的东西让你难受，那你就果断的删掉它，重新用适合自己的方式去写。我相信随着经验的增长，技能的熟悉，你自然会形成一套成熟有效的方法论。那我在乎的是什么方面的感悟呢？简单来说 </p>
+<ul>
+<li>对自己：我们总是会自言自语，我们的想法和决定往往来源于你不断的自我拷问。你对自己的方式也就是能给别人看到的你的<strong>心态</strong>。所以我很看重这一方面的感悟。比如，我觉得自己要少对自己的行为有愧疚感，特别是涉及到钱，时间，面子。在心态上多一点利己主义，对一个总是处于弱势地位的人来说极其重要。再比如，人要学会自信，甚至有一些盲目的自信，狂妄总比自卑要好。不要让别人掌控到你，做自己人生的主宰者。</li>
+<li>对他人: 高中时期最大的体会是“宁杀君子莫惹小人”，而最近最大的体会则是“人之患，在于好为人师”。有时我会控制不住的喜欢去给别人言语上的提醒，我可能自我感觉我是为了他好，甚至让他占了便宜，觉得我辛苦总结出来的经验愿意分享与你，你竟然还不感激涕零。其实以一个旁观者的身份对别人的行为提出改进意见，它的目的是好的，但是太多太多是事情告诉我们，目的好不代表就做的对，做得对也不代表做得好，做得好更不代表做得妙。而且好为人师，最大就错在没有换位思考，或者可以说是太想当然的换位思考，以为别人需要你的帮助，会很感激你的意见。不是这样的，无知的人多，短视的人也多，但是自知的人很少。而自知的人不需要你的提醒，不自知的人更不需要你的提醒，甚至会因为你的善意而看低你。每个人都有自己的精神世界，所以不要轻易的发起一次世界大战。</li>
+</ul>
+
+    
+  </div>
+
+  
+      <div class="git"></div>
+  
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持forsigner</div>
+        <ul>
+        
+          <li class="item">
+            <span>微信扫一扫</span>
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <span>支付宝扫一扫</span>
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="hide pull-left" href="/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://www.wangkl.tk/2016/03/28/作为前端菜鸟的一点感想/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+    
+
+    
+    
+
+    
+
+    
+    
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
